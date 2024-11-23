@@ -1,0 +1,195 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Se leu é gay", HidePremium = false,IntroEnabled = false, SaveConfig = true, ConfigFolder = "SettingsFolder"})
+
+if not game.Loaded then
+	game.Loaded:Wait()
+end
+local plr = game.Players.LocalPlayer
+local char = plr.Character or plr.CharacterAdded:Wait()
+local hum = char:WaitForChild("Humanoid")
+
+-- Values
+
+_G.UseDefaultWalkSpeed = true
+_G.UseNormalJumpPower = true
+
+-- Tabs
+-- DBZFS
+local DBZFS = Window:MakeTab({
+	Name = "DBZFS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+DBZFS:AddButton({
+	Name = "BoogaHUB V5",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/FortniBloxYT1/BOOGA-HUB-V4/main/BOOGA-HUB%20V5.lua"))()
+  	end    
+})
+
+-- TSB
+
+local TSBTab = Window:MakeTab({
+	Name = "TSB",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TSBTab:AddButton({
+	Name = "Gojo(Saitama)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Doumaix/qqwrxxxx/main/gojo_v2.4.lua"))()
+	end
+})
+
+TSBTab:AddButton({
+    Name = "Phantasm V2",
+    Callback = function()
+        getgenv().ToggleKeybind = Enum.KeyCode.RightControl
+        getgenv().FreeEmotesTab = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))()
+    end
+})
+
+-- Fisch
+
+local FischTab = Window:MakeTab({
+	Name = "Fisch",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+FischTab:AddButton({
+    Name = "Speed Hub X",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+    end
+})
+
+-- Adopt Me 
+
+local AdoptMeTab = Window:MakeTab({
+    Name = "Adopt Me",
+    Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+AdoptMeTab:AddButton({
+    Name = "Load Bxlix Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/trdrock/adoptMe/main/BxlixHuB"))()
+    end
+})
+
+-- Brookhaven
+
+local BrookhavenTab = Window:MakeTab({    
+    Name = "Brookhaven",
+    Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+BrookhavenTab:AddButton({
+    Name = "Script for troll",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrollGuiMaker/f0rtuit0us-hub/refs/heads/main/old"))()
+    end
+})
+
+-- Misc
+
+local Misc = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local MiscSection = Misc:AddSection({
+	Name = "WalkSpeed"
+})
+
+local otherSection = Misc:AddSection({
+	Name = "Jump Power"
+})
+
+Misc:AddToggle({
+	Name = "Remove Shadows",
+	Default = false,
+	Save = true,
+	Callback = function(Value)
+		if Value == true then
+		game.Lighting.GlobalShadows = false
+		else
+			game.Lighting.GlobalShadows = true
+		end
+	end
+})
+
+MiscSection:AddToggle({
+	Name = "Use Game walkspeed",
+	Default = true,
+	Callback = function(Value)
+		_G.UseDefaultWalkSpeed = Value
+	end
+})
+
+MiscSection:AddSlider({
+	Name = "Walk Speed",
+	Min = 0,
+	Max = 100000000,
+	Default = 16,
+	Color = Color3.fromRGB(0,100,255),
+	Increment = 1,
+	ValueName = "WalkSpeed",
+	Callback = function(Value)
+		while true do
+			if _G.UseDefaultWalkSpeed == false then
+				hum.WalkSpeed = Value
+			else
+				return
+			end
+			task.wait()
+		end
+	end    
+})
+
+otherSection:AddToggle({
+	Name = "Use Game JumpPower",
+	Default = true,
+	Callback = function(Value)
+		_G.UseDefaultWalkSpeed = Value
+	end
+})
+
+otherSection:AddSlider({
+	Name = "Jump",
+	Min = 0,
+	Max = 100000000,
+	Default = 50,
+	Color = Color3.fromRGB(0,100,255),
+	Increment = 1,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+		while true do
+			if _G.UseNormalJumpPower == false then
+			hum.JumpPower = Value
+			else return end
+			task.wait()
+		end
+	end
+})
+
+local Debug = Window:MakeTab({
+	Name = "Debug",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Debug:AddButton({
+    Name = "Load Debug HUB",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/debugnation/main/decompilers%20and%20debugging/Debuggers.txt"))()
+    end
+})
