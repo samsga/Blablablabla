@@ -53,6 +53,15 @@ TSBTab:AddButton({
     end
 })
 
+TSBTab:AddButton({
+
+Name = "Okarun(Saitama)"
+Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/FlowersTsb/Moveset/refs/heads/main/FlowersOkarun"))()
+end
+
+})
+
 -- Fisch
 
 local FischTab = Window:MakeTab({
