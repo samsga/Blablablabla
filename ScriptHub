@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Se leu é gay", HidePremium = false,IntroEnabled = false, SaveConfig = true, ConfigFolder = "SettingsFolder"})
+local Window = OrionLib:MakeWindow({Name = "Max é gay", HidePremium = false,IntroEnabled = false, SaveConfig = true, ConfigFolder = "SettingsFolder"})
 
 if not game.Loaded then
 	game.Loaded:Wait()
