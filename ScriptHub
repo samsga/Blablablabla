@@ -32,7 +32,7 @@ DBZFS:AddButton({
 
 Name = "Inf Stats Calma",
 Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Calma"))()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Calma'))()
 end
 
 })
