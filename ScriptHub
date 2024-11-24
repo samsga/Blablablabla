@@ -29,6 +29,42 @@ DBZFS:AddButton({
   	end    
 })
 
+DBZFS:AddButton({
+
+Name = "Inf Stats Calma"
+Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Calma"))
+end
+
+})
+
+DBZFS:AddButton({
+
+Name = "Inf Stats Sam"
+Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Sam"))
+end
+
+})
+
+DBZFS:AddButton({
+
+Name = "AutoTop"
+Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Autotop"))
+end
+
+})
+
+DBZFS:AddButton({
+
+Name = "AutoBroly"
+Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/AutoBroly"))
+end
+
+})
+
 -- TSB
 
 local TSBTab = Window:MakeTab({
