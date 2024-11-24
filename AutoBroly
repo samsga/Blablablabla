@@ -8,14 +8,14 @@ Settings = {
     CarryMode = false; -- [[ You will go to the first pads and spam messages ]]
     CarryModeCustomMessage = "Carrying brolies with BOOGA AUTOBROLY V10, join"; -- [[ Carry Mode custom message ]]
     EarthMode = false; -- [[ You will be teleported to earth pad instead of queue ]]
-    DroidForm = false; -- [[ Will transform you at 70 % of ki | Enable Transform setting | Key to transform will be the same as FormType Setting ]]
+    DroidForm = true; -- [[ Will transform you at 70 % of ki | Enable Transform setting | Key to transform will be the same as FormType Setting ]]
     AutoStats = false; -- [[ Will auto upgrade your stats ]]
     Stat = "Phys-Damage"; -- Stat to upgrade [Phys-Damage,Ki-Damage,Health-Max,Ki-Max,Phys-Resist,Ki-Resist,Speed]
     ExtraTime = 0; -- [[ DONT CHANGE IF SCRIPT ALREADY WORKS FINE ]],Synapse = 0,Krnl = 1,Fluxus = 1-2
     SoloBroly = false; -- [[ If someone joins with you in broly world you will be teleproted to queue ]]
     PadChanger = false; -- [[ Will change pad if someone is in your pad ]]
     PadChangerLimit = 5; -- [[ if someone has been in your pad 5 times, you will stop changing pads ]]
-    FpsBoost = false; -- [[ Low your graphics to get a fps boost ]]
+    FpsBoost = true; -- [[ Low your graphics to get a fps boost ]]
     Anchored = false; -- [[ Will freeze you on queue and broly world,enable broly anchored reccommended if you enable this ]]
     BrolyAnchored = false; -- [[ Will freeze broly ]]
 }
