@@ -51,7 +51,7 @@ DBZFS:AddButton({
 
 Name = "AutoTop"
 Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Autotop"))
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Autotop"))()
 end
 
 })
@@ -60,7 +60,7 @@ DBZFS:AddButton({
 
 Name = "AutoBroly"
 Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/AutoBroly"))
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/AutoBroly"))()
 end
 
 })
