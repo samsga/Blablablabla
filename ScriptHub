@@ -28,10 +28,9 @@ DBZFS:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/FortniBloxYT1/BOOGA-HUB-V4/main/BOOGA-HUB%20V5.lua"))()
   	end    
 })
---[[
 DBZFS:AddButton({
 
-Name = "Inf Stats Calma"
+Name = "Inf Stats Calma",
 Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Calma"))()
 end
@@ -40,7 +39,7 @@ end
 
 DBZFS:AddButton({
 
-Name = "Inf Stats Sam"
+Name = "Inf Stats Sam",
 Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Sam"))()
 end
@@ -49,7 +48,7 @@ end
 
 DBZFS:AddButton({
 
-Name = "AutoTop"
+Name = "AutoTop",
 Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/Autotop"))()
 end
@@ -58,7 +57,7 @@ end
 
 DBZFS:AddButton({
 
-Name = "AutoBroly"
+Name = "AutoBroly",
 Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/AutoBroly"))()
 end
@@ -91,7 +90,7 @@ TSBTab:AddButton({
 
 TSBTab:AddButton({
 
-Name = "Okarun(Saitama)"
+Name = "Okarun(Saitama)",
 Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/FlowersTsb/Moveset/refs/heads/main/FlowersOkarun"))()
 end
