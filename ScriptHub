@@ -28,7 +28,7 @@ DBZFS:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/FortniBloxYT1/BOOGA-HUB-V4/main/BOOGA-HUB%20V5.lua"))()
   	end    
 })
-
+--[[
 DBZFS:AddButton({
 
 Name = "Inf Stats Calma"
@@ -63,7 +63,7 @@ Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/samsga/Blablablabla/refs/heads/main/AutoBroly"))()
 end
 
-})
+})--]]
 
 -- TSB
 
