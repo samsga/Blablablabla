@@ -193,7 +193,7 @@ MiscSection:AddToggle({
 MiscSection:AddSlider({
 	Name = "Walk Speed",
 	Min = 0,
-	Max = 100000000,
+	Max = 500,
 	Default = 16,
 	Color = Color3.fromRGB(0,100,255),
 	Increment = 1,
@@ -221,7 +221,7 @@ otherSection:AddToggle({
 otherSection:AddSlider({
 	Name = "Jump",
 	Min = 0,
-	Max = 100000000,
+	Max = 500,
 	Default = 50,
 	Color = Color3.fromRGB(0,100,255),
 	Increment = 1,
